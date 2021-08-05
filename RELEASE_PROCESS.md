@@ -18,14 +18,14 @@ update the versions mentioned on the README and doc comments (and CI config if i
 First, just run:
 
 ```sh
-cargo smart-release phf phf_codegen phf_generator phf_macros phf_shared
+cargo smart-release phf phf_codegen phf_macros phf_shared
 ```
 
 This would show what `cargo-smart-release` would do, e.g. how it updates the version number, changelog, etc.
 If you satisfy the output, run:
 
 ```sh
-cargo smart-release -u -e phf phf_codegen phf_generator phf_macros phf_shared
+cargo smart-release -u -e phf phf_codegen phf_macros phf_shared
 ```
 
 This would make actual releases. `-e` means that it executes actual releases and `-u` means that it always updates crates-index.

@@ -11,5 +11,4 @@ rust-version = "1.60"
 categories = ["data-structures"]
 
 [dependencies]
-phf_generator = "0.11.0"
 phf_shared = "0.11.0"
