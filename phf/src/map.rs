@@ -4,6 +4,11 @@ use crate::{
     hash::{DefaultHasher, Displacement},
     PhfBorrow, PhfHash, PhfHasher,
 };
+
+use crate::{
+    hash::{DefaultHasher, Displacement},
+    PhfBorrow, PhfHash, PhfHasher,
+};
 use core::fmt;
 use core::iter::FusedIterator;
 use core::iter::IntoIterator;
@@ -57,7 +62,7 @@ where
 }
 
 <<<<<<< HEAD
-impl<K, V> Default for Map<K, V> {
+impl<K, V, G> Default for Map<K, V, G> {
     fn default() -> Self {
         Self::new()
     }
