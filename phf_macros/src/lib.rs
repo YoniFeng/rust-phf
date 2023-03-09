@@ -14,7 +14,7 @@ use syn::punctuated::Punctuated;
 use syn::ExprLit;
 use syn::{parse_macro_input, Error, Expr, Lit, Token, UnOp};
 #[cfg(feature = "unicase")]
-use unicase::UniCase;
+use unicase_::UniCase;
 
 #[derive(Hash, PartialEq, Eq, Clone)]
 enum ParsedKey {

@@ -61,7 +61,6 @@ where
     }
 }
 
-<<<<<<< HEAD
 impl<K, V, G> Default for Map<K, V, G> {
     fn default() -> Self {
         Self::new()
@@ -71,9 +70,9 @@ impl<K, V, G> Default for Map<K, V, G> {
 impl<K, V, G> Map<K, V, G> {
     /// Create a new, empty, immutable map.
     #[inline]
-    pub const fn new() -> Self {
+    pub const fn new(hasher: G) -> Self {
         Self {
-            key: 0,
+            hasher: hasher,
             disps: &[],
             entries: &[],
         }
